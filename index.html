@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthi E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Karthi E-Commerce</h1>
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <div class="cart">
+            <span id="cart-count">0</span> items in cart
+        </div>
+    </header>
+
+    <main>
+        <section class="product-catalog" id="product-catalog">
+            <!-- Products will be dynamically inserted here -->
+        </section>
+
+        <section class="shopping-cart" id="shopping-cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+
+        <div id="order-notification" class="hidden">
+            <p>Order placed successfully!</p>
+            <button onclick="closeNotification()">Close</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
